@@ -1,1 +1,44 @@
-<h1>Index for Tips</h1>
+<div class="row top-spaced">
+  <div class="col-md-3">
+    <%= image_tag("dbc.png", :alt => "DBC Logo") %>
+    <%= render "layouts/add_tip" %> 
+  </div>
+  <div class="col-md-9"> 
+    <ul class="nav nav-tabs" id="myTab">
+      <li class="active"><a href="#all">All</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#ruby">Ruby</a></li>
+      <li><a href="#js">JavaScript</a></li>
+      <li><a href="#git">GIT</a></li>
+      <li><a href="#sql">SQL</a></li>
+      <li><a href="#other">Other</a></la>
+    </ul>
+    <div id="content" class="tab-content">
+      <div class="tab-pane fade in active" id="all">
+        <%= render "layouts/all" %>
+      </div>
+      <div class="tab-pane fade" id="html">
+        <%= render "layouts/html" %>
+      </div>
+      <div class="tab-pane fade" id="css">
+        <%= render "layouts/css" %>
+      </div>
+      <div class="tab-pane fade" id="ruby">
+        <%= render "layouts/ruby" %>
+      </div>
+      <div class="tab-pane fade" id="js">
+        <%= render "layouts/js" %>
+      </div>
+      <div class="tab-pane fade" id="git">
+        <%= render "layouts/git" %>
+      </div>
+      <div class="tab-pane fade" id="sql">
+        <%= render "layouts/sql" %>
+      </div>
+      <div class="tab-pane fade" id="other">
+        <%= render "layouts/other" %>
+      </div>
+    </div>
+  </div>
+</div>

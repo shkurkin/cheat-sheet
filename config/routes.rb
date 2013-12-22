@@ -1,4 +1,6 @@
 CheatSheet::Application.routes.draw do
+  resources :tips
+
   get "tips/new"
 
   root to: 'tips#index'

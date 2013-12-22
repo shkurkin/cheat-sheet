@@ -1,0 +1,17 @@
+<%= form_for(@tip) do |f| %>
+
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control" %>
+
+  <%= f.label :tip %>
+  <%= f.text_area :info, rows: "5", class: "form-control" %>
+
+  <%= f.label :category %>
+  <%= f.select :category, [["HTML", 'html'], ["CSS", "css"], ["Ruby", "ruby"],                      ["JavaScript", "js"], ["GIT", "git"], ["SQL", "sql"],
+                          ["Other", "other"]], class: "form-control" %>
+
+  <%= f.submit "Add Tip", class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>

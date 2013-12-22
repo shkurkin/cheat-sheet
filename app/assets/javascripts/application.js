@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require jquery.grid-a-licious.min
+//= require masonry
 //= require_tree .
