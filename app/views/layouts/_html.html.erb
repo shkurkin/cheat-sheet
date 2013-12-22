@@ -2,7 +2,7 @@
   <% @html.reverse_each do |tip| %>
     <div class="tip">
       <%= link_to tip.title, tip %></br>
-      <%= tip.info %>
+      <%= tip.info.html_safe %>
     </div>
   <% end %>
 </div>
