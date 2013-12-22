@@ -1,4 +1,8 @@
 CheatSheet::Application.routes.draw do
+  get "tips/new"
+
+  root to: 'tips#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
